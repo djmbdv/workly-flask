@@ -1,3 +1,8 @@
 Flask
 flask-restful
+Flask-JWT
+flask-sqlalchemy
+Flask-migrate
+psycopg2
 gunicorn
+flask-marshmallow
