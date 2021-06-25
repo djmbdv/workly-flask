@@ -6,3 +6,4 @@ Flask-migrate
 psycopg2
 gunicorn
 flask-marshmallow
+flask-cors
