@@ -7,6 +7,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 api = Api(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://xdjdzwflubsbjj:0d4c6657d92f66fb060d04a7a2ea3e0a5ba72cec8ccc2dae42eabea0de814b8b@ec2-52-23-40-80.compute-1.amazonaws.com:5432/d6l3uvcb2m9r53" # 'sqlite:///test.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False;
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 CORS(app)
